@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/BackgroundMain"
+    android:background="#452B00"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/title"
+        android:textColor="@color/primary_light"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/winnerTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTxt"
+        tools:text="YOU WON"
+        tools:textColor="@color/divider" />
+
+    <LinearLayout
+        android:padding="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:layout_marginTop="12dp"
+        android:weightSum="3"
+        app:layout_constraintTop_toBottomOf="@id/winnerTxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button00"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:textSize="80sp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_final"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights,SpeakableTextPresentCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button01"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:textSize="80sp"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_final"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button02"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:textSize="80sp"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_final"
+                android:layout_weight="1"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button10"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:textSize="80sp"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_final"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button11"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:textSize="80sp"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_final"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button12"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:textSize="80sp"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_final"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button20"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:textSize="80sp"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_final"
+                android:layout_weight="1"
+                tools:ignore="NestedWeights" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button21"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:textSize="80sp"
+                android:layout_margin="5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_final"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button22"
+                android:layout_width="0dp"
+                android:textAlignment="center"
+                android:textSize="80sp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@drawable/btn_final"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
